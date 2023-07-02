@@ -1,0 +1,249 @@
+.main-screen {
+    padding: 20px 0 43px;
+    position: relative;
+    width: 100%;
+}
+
+.main-screen__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    align-items: stretch;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.main-screen__aside {
+    display: flex;
+    height: 100%;
+    padding-bottom: 26px;
+    position: relative;
+    width: 304px;
+}
+
+.main-screen__banner {
+    border: 3px solid #da002b;
+    border-radius: 12px;
+    height: 384px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.main-banner__head {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: space-between;
+    line-height: 24px;
+    margin-bottom: 8px;
+    padding: 13px 13px 0;
+    width: 100%;
+}
+
+.timer {
+    align-items: center;
+    display: flex;
+}
+
+.timer span, .timer span:after {
+    font-feature-settings: "pnum" on,"lnum" on;
+    font-size: 16px;
+    text-align: center;
+}
+
+.timer span {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    display: flex;
+    font-weight: 400;
+    height: 28px;
+    justify-content: center;
+    line-height: 24px;
+    margin-right: 8px;
+    padding: 2px;
+    position: relative;
+    width: 28px;
+}
+
+.timer span:after {
+    content: ":";
+    display: block;
+    height: 100%;
+    line-height: 1.5em;
+    position: absolute;
+    right: -9px;
+    top: 0;
+    width: 8px;
+}
+
+.timer span:last-child {
+    margin-right: 0;
+}
+
+.timer span:last-child::after {
+    content: none;
+}
+
+.product-card {
+    height: 329px;
+    padding: 0 13px 13px;
+}
+
+.product-card__link {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.product-card__image {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    height: 174px;
+    margin-bottom: 10px;
+}
+
+.product-card__sale {
+    font-feature-settings: "pnum" on,"lnum" on;
+    background: #da002b;
+    border-radius: 6px;
+    color: #fff;
+    height: 24px;
+    justify-content: center;
+    line-height: 16px;
+    padding: 2px 8px;
+    top: 0;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.product-card__picture {
+    align-items: center;
+    border-radius: 12px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.product-card__image img, .product-card__image picture {
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 100%;
+}
+
+.product-card__content {
+    height: 132px;
+}
+
+.product-card__brand-name {
+    font-feature-settings: "pnum" on,"lnum" on;
+    align-items: flex-start;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+    transition: all .3s ease 0s;
+    height: 40px;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.product-card__col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card__price {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.price__head {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 8px;
+    min-height: 24px;
+}
+
+.price__main {
+    font-feature-settings: "pnum" on,"lnum" on;
+    color: #da002b;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 6px;
+    order: 1;
+}
+
+.price__old {
+    font-feature-settings: "pnum" on,"lnum" on;
+    color: #999;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 0;
+    order: 2;
+    text-decoration-line: line-through;
+}
+
+.price__credit {
+    align-items: center;
+    display: flex;
+    font-feature-settings: "pnum" on,"lnum" on;
+    background: #ffd740;
+    border-radius: 6px;
+    color: #111;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 16px;
+    margin-right: auto;
+    min-height: 24px;
+    order: 3;
+    padding: 4px 8px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1024px){
+
+    .main-screen__aside {
+        width: 100%;
+    }
+
+    .main-screen__container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+}
+
